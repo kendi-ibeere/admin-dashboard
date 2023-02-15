@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 
 import UserList from "./pages/userList/UserList";
 import ProductList from "./pages/productList/ProductList";
+import NewUser from "./pages/newUser/NewUser";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<Home />}/>
           <Route path="/users" element = {<UserList />}/>
+          <Route path="/users/:userid" element = {<NewUser />}/>
           <Route path="/products" element = {<ProductList />}/>
           
         </Routes>
